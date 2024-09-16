@@ -14,6 +14,7 @@ async function fetchFoodData(category) {
       console.error('Error fetching for food data:', error);
     }
   }
+ 
 
   function displayFoodItems(meals) {
     const foodContainer = document.getElementById('food-container');
@@ -43,7 +44,6 @@ async function fetchFoodData(category) {
 
     });
   });
-  button.style.background ="#ffffff";
 
   // Fetch default category on page load
   fetchFoodData('Potato');
