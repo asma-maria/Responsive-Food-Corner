@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Food Corner</title>
+    <!--Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Daisy UI CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!--Font Awesome icon-->
+    <script src="https://kit.fontawesome.com/3c58b58728.js" crossorigin="anonymous"></script>    
+</head>
+<body>
+    
+    <!-- 1. Navbar -->
+  <nav class="bg-white shadow-lg p-4 ">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo and Website Name -->
+      <div class="flex items-center">
+        <img src="logo2.jpg" alt="Logo" class="h-16 w-16">
+        <span class="ml-2 text-2xl font-bold text-red-950"> Healthy Food </span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-4" >
+        <button class="btn btn-ghost category-btn" data-category="Potato">Potato</button>
+        <button class="btn btn-ghost category-btn" data-category="Soup">Soup</button>
+        <button class="btn btn-ghost category-btn" data-category="Chicken">Chicken</button>
+        <button class="btn btn-ghost category-btn" data-category="Beef">Beef</button>
+      </div>
+
+      <!-- Mobile Menu Button (Hamburger) -->
+      <div  tabindex="0" class="md:hidden ">
+        <button id="hamburger" class="btn btn-square btn-ghost">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="absolute top-16 right-4 bg-white shadow-lg rounded-lg p-4">
+          <button class="block btn btn-ghost category-btn w-full text-left" data-category="Potato">Potato</button>
+          <button class="block btn btn-ghost category-btn w-full text-left" data-category="Soup">Soup</button>
+          <button class="block btn btn-ghost category-btn w-full text-left" data-category="Chicken">Chicken</button>
+          <button class="block btn btn-ghost category-btn w-full text-left" data-category="Beef">Beef</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Nav bar End-->
+  <!--Banner Start-->
+  <!-- Banner (Carousel) -->
+  <div class="carousel w-full">
+    <!--Carousal-1-->
+    <div id="slide1" class="carousel-item relative w-full">
+      <div
+class="hero"
+style="background-image: url(Resources/banner1.jpg);">
+<div class="hero-overlay bg-opacity-60"></div>
+<div class="hero-content text-neutral-content text-center py-20">
+  <div class="max-w-md">
+    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+    <p class="mb-5">
+      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+      quasi. In deleniti eaque aut repudiandae et a id nisi.
+    </p>
+    <button class="btn btn-primary">Get Started</button>
+  </div>
+</div>
+</div>
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide4" class="btn btn-circle">❮</a>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+     <!--Carousal-2-->
+    <div id="slide2" class="carousel-item relative w-full">
+      <div
+class="hero"
+style="background-image: url(Resources/banner2.jpg);">
+<div class="hero-overlay bg-opacity-60"></div>
+<div class="hero-content text-neutral-content text-center ">
+  <div class="max-w-md">
+    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+    <p class="mb-5">
+      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+      quasi. In deleniti eaque aut repudiandae et a id nisi.
+    </p>
+    <button class="btn btn-primary">Get Started</button>
+  </div>
+</div>
+</div>
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide1" class="btn btn-circle">❮</a>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+     <!--Carousal-3-->
+    <div id="slide3" class="carousel-item relative w-full">
+      <div
+      class="hero"
+      style="background-image: url(Resources/banner3.jpg);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+          <p class="mb-5">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+            quasi. In deleniti eaque aut repudiandae et a id nisi.
+          </p>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+      </div>
+    </div>
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide2" class="btn btn-circle">❮</a>
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+     <!--Carousal-4-->
+    <div id="slide4" class="carousel-item relative w-full">
+      <div
+      class="hero"
+      style="background-image: url(Resources/banner4.jpg);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+          <p class="mb-5">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+            quasi. In deleniti eaque aut repudiandae et a id nisi.
+          </p>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+      </div>
+    </div>
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide3" class="btn btn-circle">❮</a>
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+  
+  <!--Banner End-->
+ 
+
+    <script src="main.js"></script>
+</body>
+</html>
