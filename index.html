@@ -11,9 +11,9 @@
     <!--Font Awesome icon-->
     <script src="https://kit.fontawesome.com/3c58b58728.js" crossorigin="anonymous"></script>    
 </head>
-<body>
-    
-    <!-- 1. Navbar -->
+<body >
+    <header class="bg-white container mx-auto">
+         <!-- 1. Navbar -->
   <nav class="bg-white shadow-lg p-4 ">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo and Website Name -->
@@ -28,6 +28,7 @@
         <button class="btn btn-ghost category-btn" data-category="Soup">Soup</button>
         <button class="btn btn-ghost category-btn" data-category="Chicken">Chicken</button>
         <button class="btn btn-ghost category-btn" data-category="Beef">Beef</button>
+        <button class="btn btn-ghost category-btn" data-category="Burger">Burger</button>
       </div>
 
       <!-- Mobile Menu Button (Hamburger) -->
@@ -42,6 +43,7 @@
           <button class="block btn btn-ghost category-btn w-full text-left" data-category="Soup">Soup</button>
           <button class="block btn btn-ghost category-btn w-full text-left" data-category="Chicken">Chicken</button>
           <button class="block btn btn-ghost category-btn w-full text-left" data-category="Beef">Beef</button>
+          <button class="btn btn-ghost category-btn" data-category="Burger">Burger</button>
         </div>
       </div>
     </div>
@@ -141,8 +143,16 @@ style="background-image: url(Resources/banner2.jpg);">
   </div>
   
   <!--Banner End-->
+
+    </header>
+   
+  <!--API Calling Section  Start-->
+  <section class="py-10 bg-white container mx-auto">
+    <div id="food-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </section>
+<!--API Calling Section End-->  
  
 
-    <script src="main.js"></script>
+    <script src="Js/main.js"></script>
 </body>
 </html>
