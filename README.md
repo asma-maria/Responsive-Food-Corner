@@ -4,17 +4,18 @@
 <h5>Features: </h5>
 <p> a.Fully responsive navbar with category buttons for showing the indivisual items of food</p> 
  <p> b.Beautiful carousel banner with promotional contents with responsiveness</p>
- <p>c.API calling with responsiveness for desktop,laptop and mobile devices</p>
+ <p>c.API calling system with responsiveness for desktop,laptop and mobile devices</p>
  <p> d.FAQ section </p>
  <p>e.User reviews section</p>
  <p>f.Footer section </p>
+ <p>g.Fully responsive for large,medium and small devices</p>
 
  <h5>Technologies: </h5>
 <p> a.HTML</p> 
  <p> b.Tailwindcss</p>
  <p>c.DaisyUI</p>
  <p> d.JavaScript</p>
- <p>e.Font awesome n</p>
+ <p>e.Font awesome </p>
 
  <h4>Live URL:</h4>
  <h5>https://asma-maria.github.io/Responsive-Food-Corner/</h5>
