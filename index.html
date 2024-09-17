@@ -11,135 +11,143 @@
     <!--Font Awesome icon-->
     <script src="https://kit.fontawesome.com/3c58b58728.js" crossorigin="anonymous"></script>    
 </head>
-<body >
-    <header class="bg-white container mx-auto">
-         <!-- 1. Navbar -->
-  <nav class="bg-white shadow-lg p-4 ">
-    <div class="container mx-auto flex justify-between items-center">
-      <!-- Logo and Website Name -->
-      <div class="flex items-center">
-        <img src="logo2.jpg" alt="Logo" class="h-16 w-16">
-        <span class="ml-2 text-2xl font-bold text-red-950"> Healthy Food </span>
-      </div>
+<body class="bg-red-100 font-serif" >
+    <header class="container mx-auto">
+         <!-- Navbar Start -->
+         <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown" tabindex="0" class="md:hidden ">
+                    <button id="hamburger" class="btn btn-square btn-ghost">
+                        <i class="fa-sharp fa-solid fa-bars"></i>
+                    </button>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <button class="category-btn bg-red-500 text-white px-4 py-2 rounded" data-category="Potato">Potato</button>
+                      <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded"  data-category="Soup">Soup</button>
+                      <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded" data-category="Chicken">Chicken</button>
+                      <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded"" data-category="Beef">Beef</button>
+                      <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded" data-category="Burger">Burger</button>
+                    </ul>
+                  </div>
+                  <img src="Resources/logo.jpg" alt="Logo" class="h-16 w-16">
+                  <span class="ml-2 text-2xl font-bold text-red-950">Hungry Spoon </span>
+            </div>
+            <div class="navbar-center hidden lg:flex flex-col">
+               <p class="mt-10 text-wrap font-serif text-red-950">Sort by popularity</p>
+               <ul class="menu menu-horizontal px-1 gap-3">
+                <button class="category-btn bg-red-500 text-white px-4 py-2 rounded" data-category="Potato">Potato</button>
+                <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded"  data-category="Soup">Soup</button>
+                <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded" data-category="Chicken">Chicken</button>
+                <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded"" data-category="Beef">Beef</button>
+                <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded" data-category="Burger">Burger</button>
+              </ul>
 
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex space-x-4" >
-        <button class="btn btn-ghost category-btn" data-category="Potato">Potato</button>
-        <button class="btn btn-ghost category-btn" data-category="Soup">Soup</button>
-        <button class="btn btn-ghost category-btn" data-category="Chicken">Chicken</button>
-        <button class="btn btn-ghost category-btn" data-category="Beef">Beef</button>
-        <button class="btn btn-ghost category-btn" data-category="Burger">Burger</button>
-      </div>
-
-      <!-- Mobile Menu Button (Hamburger) -->
-      <div  tabindex="0" class="md:hidden ">
-        <button id="hamburger" class="btn btn-square btn-ghost">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-        </button>
-
-        <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="absolute top-16 right-4 bg-white shadow-lg rounded-lg p-4">
-          <button class="block btn btn-ghost category-btn w-full text-left" data-category="Potato">Potato</button>
-          <button class="block btn btn-ghost category-btn w-full text-left" data-category="Soup">Soup</button>
-          <button class="block btn btn-ghost category-btn w-full text-left" data-category="Chicken">Chicken</button>
-          <button class="block btn btn-ghost category-btn w-full text-left" data-category="Beef">Beef</button>
-          <button class="btn btn-ghost category-btn" data-category="Burger">Burger</button>
-        </div>
-      </div>
+            </div>
+            <div class="navbar-end">
+                <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-3xl" />
+                  </div>
+                  <i class="fa-solid fa-magnifying-glass -ml-6"></i>
+            </div>
+          </div>
     </div>
   </nav>
+  
   <!--Nav bar End-->
   <!--Banner Start-->
   <!-- Banner (Carousel) -->
-  <div class="carousel w-full">
-    <!--Carousal-1-->
-    <div id="slide1" class="carousel-item relative w-full">
-      <div
-class="hero"
-style="background-image: url(Resources/banner1.jpg);">
-<div class="hero-overlay bg-opacity-60"></div>
-<div class="hero-content text-neutral-content text-center py-20">
-  <div class="max-w-md">
-    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-    <p class="mb-5">
-      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-      quasi. In deleniti eaque aut repudiandae et a id nisi.
-    </p>
-    <button class="btn btn-primary">Get Started</button>
-  </div>
-</div>
-</div>
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <a href="#slide4" class="btn btn-circle">❮</a>
-        <a href="#slide2" class="btn btn-circle">❯</a>
+  <div class=" sticky">
+    <div class="carousel  w-full">
+        <!--Carousal-1-->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div
+    class="hero"
+    style="background-image: url(Resources/banner1.jpg);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-neutral-content text-center py-20">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+        <p class="mb-5">
+          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+          quasi. In deleniti eaque aut repudiandae et a id nisi.
+        </p>
+        <button class="btn btn-primary">Get Started</button>
       </div>
     </div>
-     <!--Carousal-2-->
-    <div id="slide2" class="carousel-item relative w-full">
-      <div
-class="hero"
-style="background-image: url(Resources/banner2.jpg);">
-<div class="hero-overlay bg-opacity-60"></div>
-<div class="hero-content text-neutral-content text-center ">
-  <div class="max-w-md">
-    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-    <p class="mb-5">
-      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-      quasi. In deleniti eaque aut repudiandae et a id nisi.
-    </p>
-    <button class="btn btn-primary">Get Started</button>
-  </div>
-</div>
-</div>
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <a href="#slide1" class="btn btn-circle">❮</a>
-        <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+         <!--Carousal-2-->
+        <div id="slide2" class="carousel-item relative w-full">
+          <div
+    class="hero"
+    style="background-image: url(Resources/banner2.jpg);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-neutral-content text-center ">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+        <p class="mb-5">
+          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+          quasi. In deleniti eaque aut repudiandae et a id nisi.
+        </p>
+        <button class="btn btn-primary">Get Started</button>
       </div>
     </div>
-     <!--Carousal-3-->
-    <div id="slide3" class="carousel-item relative w-full">
-      <div
-      class="hero"
-      style="background-image: url(Resources/banner3.jpg);">
-      <div class="hero-overlay bg-opacity-60"></div>
-      <div class="hero-content text-neutral-content text-center">
-        <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-          <p class="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-            quasi. In deleniti eaque aut repudiandae et a id nisi.
-          </p>
-          <button class="btn btn-primary">Get Started</button>
+    </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+         <!--Carousal-3-->
+        <div id="slide3" class="carousel-item relative w-full">
+          <div
+          class="hero"
+          style="background-image: url(Resources/banner3.jpg);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+              <p class="mb-5">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                quasi. In deleniti eaque aut repudiandae et a id nisi.
+              </p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+         <!--Carousal-4-->
+        <div id="slide4" class="carousel-item relative w-full">
+          <div
+          class="hero"
+          style="background-image: url(Resources/banner4.jpg);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+              <p class="mb-5">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                quasi. In deleniti eaque aut repudiandae et a id nisi.
+              </p>
+              <button class="btn border-t-green-600">Get Started</button>
+            </div>
+          </div>
+        </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
         </div>
       </div>
-    </div>
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <a href="#slide2" class="btn btn-circle">❮</a>
-        <a href="#slide4" class="btn btn-circle">❯</a>
-      </div>
-    </div>
-     <!--Carousal-4-->
-    <div id="slide4" class="carousel-item relative w-full">
-      <div
-      class="hero"
-      style="background-image: url(Resources/banner4.jpg);">
-      <div class="hero-overlay bg-opacity-60"></div>
-      <div class="hero-content text-neutral-content text-center">
-        <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-          <p class="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-            quasi. In deleniti eaque aut repudiandae et a id nisi.
-          </p>
-          <button class="btn btn-primary">Get Started</button>
-        </div>
-      </div>
-    </div>
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <a href="#slide3" class="btn btn-circle">❮</a>
-        <a href="#slide1" class="btn btn-circle">❯</a>
-      </div>
-    </div>
   </div>
   
   <!--Banner End-->
@@ -147,7 +155,7 @@ style="background-image: url(Resources/banner2.jpg);">
     </header>
    
   <!--API Calling Section  Start-->
-  <section class="py-10 bg-white container mx-auto">
+  <section class="py-10 container mx-auto">
     <div id="food-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
   </section>
 <!--API Calling Section End-->  
@@ -156,7 +164,7 @@ style="background-image: url(Resources/banner2.jpg);">
 <section class="py-10">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
-      <div class="collapse bg-base-200 mb-4">
+      <div class="collapse collapse-arrow bg-base-200 mb-4">
         <input type="checkbox" class="peer">
         <div class="collapse-title bg-red-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
           What kind of food do you serve?
@@ -165,7 +173,7 @@ style="background-image: url(Resources/banner2.jpg);">
           <p>We serve a wide variety of meals including vegetarian, vegan, and gluten-free options.</p>
         </div>   
       </div>
-      <div class="collapse bg-base-200 mb-4">
+      <div class="collapse collapse-arrow bg-base-200 mb-4">
         <input type="checkbox" class="peer">
         <div class="collapse-title bg-red-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
           What kind of food do you serve?
@@ -174,7 +182,7 @@ style="background-image: url(Resources/banner2.jpg);">
           <p>We serve a wide variety of meals including vegetarian, vegan, and gluten-free options.</p>
         </div> 
       </div>
-      <div class="collapse bg-base-200">
+      <div class="collapse collapse-arrow bg-base-200">
         <input type="checkbox" class="peer">
         <div class="collapse-title bg-red-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
           How can I place an order?
@@ -221,9 +229,90 @@ style="background-image: url(Resources/banner2.jpg);">
     </div>
   </section>
 <!--User Review Section End-->
+<!-- Footer -->
+<!-- Footer Section -->
+<footer class="bg-black py-12 px-10 text-white align-middle ">
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Order Now Section -->
+        <div>
+            <h4 class="font-bold mb-4">Order Now</h4>
+            <ul>
+                <li><a href="#" class="hover:underline">Deals</a></li>
+                <li><a href="#" class="hover:underline">Chicken</a></li>
+                <li><a href="#" class="hover:underline">Beef</a></li>
+                <li><a href="#" class="hover:underline">Burger</a></li>
+                <li><a href="#" class="hover:underline">Soup</a></li>
 
+            </ul>
+        </div>
+        <!-- About Section -->
+        <div>
+            <h4 class="font-bold mb-4">About</h4>
+            <ul>
+                <li><a href="#" class="hover:underline">About us</a></li>
+                <li><a href="#" class="hover:underline">Contact </a></li>
+            </ul>
+        </div>
+        <!-- Policy Section -->
+        <div>
+            <h4 class="font-bold mb-4">Policy</h4>
+            <ul>
+                <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                <li>
+                    <a href="#" class="mt-4 inline-block">
+                        <img src="Resources/play.jpg" class="w-32 h-24" alt="Google Play">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Visit Hungry Spoon  Section -->
+        <div>
+            <h4 class="font-bold mb-4">Visit Hungry Spoon </h4>
+            <ul>
+                <li><a href="#" class="hover:underline">Locate a Store</a></li>
+            </ul>
+        </div>
+    </div>
 
- 
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+        <!-- Store Locator Section -->
+        <div>
+            <h4 class="font-bold mb-4">Store Locator</h4>
+            <ul>
+                <li><a href="#" class="hover:underline">Dhaka</a></li>
+                <li><a href="#" class="hover:underline">Chittagong</a></li>
+                <li><a href="#" class="hover:underline">Barishal</a></li>
+            </ul>
+        </div>
+        <!-- My Hungry Spoon  Section -->
+        <div>
+            <h4 class="font-bold mb-4">Hungry Spoon </h4>
+            <ul>
+                <li><a href="#" class="hover:underline">Sign In/Register</a></li>
+            </ul>
+        </div>
+        <!-- Feedback Section -->
+        <div>
+            <h4 class="font-bold mb-4">Help us in serving you better</h4>
+            <button class="bg-orange-700 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">Give Feedback</button>
+        </div>
+        <!-- Social Media Links Section -->
+        <div>
+            <h4 class="font-bold mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-200 hover:text-green-300"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-200 hover:text-green-300"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-200 hover:text-green-300"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container mx-auto text-center mt-8">
+        <p class="text-orange-600">&copy; 2024, Hungry Spoon. All rights reserved.</p>
+    </div>
+</footer>
+  
 
     <script src="Js/main.js"></script>
 </body>
