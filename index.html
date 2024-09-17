@@ -14,46 +14,44 @@
 <body class="bg-red-100 font-serif" >
     <header class="container mx-auto">
          <!-- Navbar Start -->
-         <div class="navbar bg-base-100">
+         <div class="navbar bg-purple-50">
             <div class="navbar-start">
-                <div class="dropdown" tabindex="0" class="md:hidden ">
-                    <button id="hamburger" class="btn btn-square btn-ghost">
-                        <i class="fa-sharp fa-solid fa-bars"></i>
-                    </button>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <button class="category-btn bg-red-500 text-white px-4 py-2 rounded" data-category="Potato">Potato</button>
-                      <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded"  data-category="Soup">Soup</button>
-                      <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded" data-category="Chicken">Chicken</button>
-                      <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded"" data-category="Beef">Beef</button>
-                      <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded" data-category="Burger">Burger</button>
-                    </ul>
+                <div class="dropdown">
+                  <div id="hamburger" tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
                   </div>
-                  <img src="Resources/logo.jpg" alt="Logo" class="h-16 w-16">
-                  <span class="ml-2 text-2xl font-bold text-red-950">Hungry Spoon </span>
-            </div>
+                  <ul
+                    tabindex="0"
+                    id="mobile-menu" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <button class="category-btn bg-red-500 text-white px-4 py-2 rounded" data-category="Potato">Potato</button>
+                <button class="category-btn  text-black px-4 py-2 rounded"  data-category="Soup">Soup</button>
+                <button class="category-btn  text-black px-4 py-2 rounded" data-category="Chicken">Chicken</button>
+                <button class="category-btn  text-black px-4 py-2 rounded"" data-category="Beef">Beef</button>
+                <button class="category-btn  text-black px-4 py-2 rounded" data-category="Burger">Burger</button>
+                    
+                  </ul>
+                </div>
+                <img src="Resources/logo.jpg" alt="Logo" class="h-16 w-16">
+                <span class="ml-2 text-2xl font-bold text-red-950">Hungry Spoon </span>
+              </div>
             <div class="navbar-center hidden lg:flex flex-col">
                <p class="mt-10 text-wrap font-serif text-red-950">Sort by popularity</p>
                <ul class="menu menu-horizontal px-1 gap-3">
                 <button class="category-btn bg-red-500 text-white px-4 py-2 rounded" data-category="Potato">Potato</button>
-                <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded"  data-category="Soup">Soup</button>
-                <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded" data-category="Chicken">Chicken</button>
-                <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded"" data-category="Beef">Beef</button>
-                <button class="category-btn bg-gray-300 text-black px-4 py-2 rounded" data-category="Burger">Burger</button>
+                <button class="category-btn text-black px-4 py-2 rounded"  data-category="Soup">Soup</button>
+                <button class="category-btn  text-black px-4 py-2 rounded" data-category="Chicken">Chicken</button>
+                <button class="category-btn text-black px-4 py-2 rounded"" data-category="Beef">Beef</button>
+                <button class="category-btn  text-black px-4 py-2 rounded" data-category="Burger">Burger</button>
               </ul>
 
             </div>
             <div class="navbar-end">
                 <div class="form-control">
-                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-3xl" />
-                  </div>
-                  <i class="fa-solid fa-magnifying-glass -ml-6"></i>
+                  
+                 
             </div>
           </div>
     </div>
-  </nav>
-  
   <!--Nav bar End-->
   <!--Banner Start-->
   <!-- Banner (Carousel) -->
@@ -67,12 +65,12 @@
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-neutral-content text-center py-20">
       <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+        <h4 class="mb-5 text-5xl font-bold"></h4>
         <p class="mb-5">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-          quasi. In deleniti eaque aut repudiandae et a id nisi.
+            <span class="text-sky-100 font-bold">"Hungry Spoon– Where Hunger Meets Happiness!"</span> At Hungry Spoon, we believe great food starts with great ingredients and a lot of heart. 
+            Our dishes are crafted with care, offering a perfect blend of flavor, freshness, and creativity. Join us for a meal that will leave you craving more!
         </p>
-        <button class="btn btn-primary">Get Started</button>
+        <button class="btn bg-orange-400">ORDER NOW</button>
       </div>
     </div>
     </div>
@@ -88,14 +86,15 @@
     style="background-image: url(Resources/banner2.jpg);">
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-neutral-content text-center ">
-      <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-        <p class="mb-5">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-          quasi. In deleniti eaque aut repudiandae et a id nisi.
-        </p>
-        <button class="btn btn-primary">Get Started</button>
-      </div>
+        <div class="max-w-md">
+            <h4 class="mb-5 text-5xl font-bold"></h4>
+            <p class="mb-5">
+                <span class="text-sky-100 font-bold">"Conveniently Located in the Heart of the City – Just Minutes Away!"</span> Whether you're out
+                 shopping or on a lunch break,Hungry Spoon is perfectly situated for a quick yet delightful meal. 
+                 Our central location makes it easy to stop by and enjoy a delicious bite.
+             </p>    
+            <button class="btn bg-orange-400">ORDER NOW</button>
+          </div>
     </div>
     </div>
           <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -111,12 +110,14 @@
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-neutral-content text-center">
             <div class="max-w-md">
-              <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-              <p class="mb-5">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                quasi. In deleniti eaque aut repudiandae et a id nisi.
+              
+              <p class="mb-5"><span class="text-sky-100 font-bold">
+                "Welcome to Hungry Spoon – Where Every Meal is a Masterpiece!"</span>– At Hungry Spoon, we take pride in serving dishes that not only 
+                satisfy your hunger but also excite your taste buds! From gourmet entrees to hearty comfort food, our diverse menu has something for everyone.
+                 Whether you’re here for a quick bite
+                 or a special dinner, our fresh ingredients and expert chefs ensure every meal is unforgettable. Come join us today and taste the difference!
               </p>
-              <button class="btn btn-primary">Get Started</button>
+              <button class="btn bg-orange-400">ORDER NOW</button>
             </div>
           </div>
         </div>
@@ -133,13 +134,14 @@
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-neutral-content text-center">
             <div class="max-w-md">
-              <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-              <p class="mb-5">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                quasi. In deleniti eaque aut repudiandae et a id nisi.
-              </p>
-              <button class="btn border-t-green-600">Get Started</button>
-            </div>
+              
+                <h2 class="mb-5 text-5xl font-bold"><span class="text-sky-200">
+                    Best Food in Town
+                    </span>
+                 
+                </h2>
+                <button class="btn bg-orange-400">ORDER NOW</button>
+              </div>
           </div>
         </div>
           <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -157,6 +159,7 @@
   <!--API Calling Section  Start-->
   <section class="py-10 container mx-auto">
     <div id="food-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    <!--Search All Item-->
   </section>
 <!--API Calling Section End-->  
 <!--FAQ Star-->
@@ -176,10 +179,10 @@
       <div class="collapse collapse-arrow bg-base-200 mb-4">
         <input type="checkbox" class="peer">
         <div class="collapse-title bg-red-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
-          What kind of food do you serve?
+          Do you provide home delivery services?
         </div>
         <div class="collapse-content">
-          <p>We serve a wide variety of meals including vegetarian, vegan, and gluten-free options.</p>
+          <p>Yes!We do. It is fully cash on home delivery </p>
         </div> 
       </div>
       <div class="collapse collapse-arrow bg-base-200">

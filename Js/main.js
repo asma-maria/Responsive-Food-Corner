@@ -52,13 +52,15 @@ async function fetchFoodData(category) {
         // Remove red color from all buttons
         document.querySelectorAll('.category-btn').forEach(button =>
         button.classList.remove('bg-red-500','text-white'));
-        button.classList.add('bg-gray-300', 'text-black');
+        button.classList.add('text-black');
         // Add red color to the clicked button
-        button.classList.remove('bg-gray-300', 'text-black');
+        button.classList.remove('text-black');
         button.classList.add('bg-red-500', 'text-white');
       });
     });
 
   // Fetch default category on page load
   fetchFoodData('Potato');
+
+ 
 
